@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sri-Portfolio</title>
+    <link rel="stylesheet" href="css/global_style.css">
+    <link rel="stylesheet" href="css/navbar_style.css">
+    <link rel="stylesheet" href="css/body-style.css">
+    <link rel="stylesheet" href="css/project-style.css">
+    <link rel="stylesheet" href="css/about-style.css">    
+    <link rel="stylesheet" href="css/contact-style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+
+   
+    
+</head>
+
+<body>
+
+<!-- ************************************  Navbar section  ****************************************************-->
+
+
+<header>
+    <nav class="navbar">
+        <a class="logo" href="#">MyPortfolio.</a>
+        <ul id="sidemenu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>           
+            <img class="menu close" src="images/close-menu.png" onclick="closemenu()"   alt="" >
+        </ul>      
+        <img class="menu open"src="images/open-menu.png" alt="" onclick="openmenu()" >
+    </nav>
+</header>
+
+   
+<!-- ************************************  Main content section  ****************************************************-->   
+
+<section class="section one" id="home">
+            
+    <div class="home-text">
+        <h1>Srinivasan A</h1>
+        <h2>I am a  <span style="--i:4;">Python Developer</span>
+                    <span style="--i:3;">Django Developer</span>
+                     <span style="--i:2;">Data Analyst</span>
+                    <span style="--i:1;">Supply Chain Analyst</span></h2>
+        <br><br><br>            
+        <a href="files/Srini resume.pdf" type="application/pdf">
+        <button class="cv">Download CV</button></a>
+        </a>
+    </div>
+
+    <div class="home-img">
+        <div class="img-container">
+            <div class="img-item">
+                <img src="images/srini_photo.png" alt="">
+            </div>
+        </div>
+        </a>
+    </div>
+</section>
+        
+
+<!-- ************************************  Project section  ****************************************************-->
+
+<section class="section two"  id="project">            
+    <h1 class="titlehead" >Projects</h1>
+
+    <div class="p-img-box">
+        
+        <div class="spend">
+            <h2>Spend Analysis Dashboard</h2>
+            <p><a href=""><img src="images/spend.png" alt=""></a></p> 
+        </div>
+
+        <div class="inventory">
+            <h2>Inventory Dashboard</h2>
+            <p><a href=""><img src="images/inv.png" alt=""></a></p> 
+        </div>                    
+        
+    </div>
+
+</section>     
+
+<!-- ************************************  About section  ****************************************************-->
+
+<section  class="three"  id="about">
+    <div class="about-area">
+       
+        <div class="text-area">
+            <h1>About me</h1>
+            <p>Hi, I'm Srinivasan A, Data Analyst with over 4 years of experience in Procurement ,logistics and operations for diverse industries. My expertise lies in leveraging data analytics and strategic planning to enhance supply chain efficiency, reduce costs, and improve overall performance.</p>
+            <br>
+            <p>My Experience and problem-solving skills led me to learn technologies like Application development,Web development,Data Analytics and Database operations.</p>
+        </div>
+
+        <div class="skill-area">
+            <h2 id="p-skill">Skills</h2>
+            <div class="list-area">
+                <button class="skill-btn">Python</button>
+                <button class="skill-btn">Django</button>
+                <button class="skill-btn">SQL</button>
+                <button class="skill-btn">PowerBI</button>
+                <button class="skill-btn">SAP MM</button>               
+           
+        </div>
+        </div>
+    </div>
+
+</section>      
+
+
+
+<!-- ************************************  contact section  ****************************************************-->
+
+<section class="section four"  id="contact">
+            
+    <div class="container">
+        
+        <div class="content">
+            <h1>Contact me</h1>
+            <div class="icons" id="email-icon">
+                <img  src="images/mail.png" alt="">
+                <p>smartvasanin@gmail.com</p><br><br>
+            </div>
+            <div class="icons">
+                <img  src="images/phone.png" alt="">
+                <p>+91-9092265382</p><br><br>
+            </div>                       
+            
+
+        </div>
+
+        <div class="contact">
+            
+            <form action="form-submit.html">
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+               
+                <textarea placeholder="Message" rows="6" required></textarea>
+                <input class="btn" type="submit" value="Send Message">
+            </form>
+        </div>
+    </div>
+
+</section>
+
+
+<footer>
+    <p>&copy; 2024 copyright.</p>
+</footer>   
+        
+
+   <script src="main.js"></script>
+      
+</body>
+</html>
