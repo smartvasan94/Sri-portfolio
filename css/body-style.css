@@ -40,12 +40,12 @@
     background-color: rgb(58, 166, 58);
     border-radius: 12px;
     color: white;
-    padding: 10px 20px;
-    margin-top: 15px;
+    padding: 10px;
+    margin: 15px;
     cursor: pointer;
     transition: 0.5s;
-    width: 120px;
-    margin-left: 20px;
+    
+    
     border: none;
 }
 
