@@ -11,6 +11,7 @@
 
     .home-text h1{
         margin-top: 50px;
+        font-size: 40px;
     }
 
     .home-text h2{
@@ -20,8 +21,13 @@
         width: 50vw;
         height:50vw;
         
+        
         }
 
+    .section.one{
+        justify-content: space-evenly;
+    }
+ 
 /* ****************section 2******************* */
 
     .p-img-box img{
@@ -38,12 +44,22 @@
     .p-img-box .spend{
             margin-bottom: 50px;
         }
+    .p-img-box h2{
+        font-size: 18px;
+    }
    
 
 /* ****************section 3******************* */   
 
+.about-area{
+    justify-content: space-evenly;}
 
+.text-area p{
+    font-size: 16px;
+}
 
+.text-area{
+     margin-top: 200px; }
 
 
 
