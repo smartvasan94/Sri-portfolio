@@ -1,5 +1,5 @@
 @media screen and (max-width:1500px){
-    .container,.section.three,.section.four,.home-text {
+    .container,.section.three,.home-text {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
