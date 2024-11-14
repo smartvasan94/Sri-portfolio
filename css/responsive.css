@@ -1,11 +1,5 @@
 @media screen and (max-width:1500px){
-    .container,.section.three,.home-text {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-items: center;
-        
-    }
+   
 /* ****************section 1******************* */
     .home-text h1{
         
