@@ -1,98 +1,66 @@
 body{
-    background-color: rgb(118, 23, 106);
+   
+    background-color: black;
+    width: 100%;
+}
+
+p{
+    color: green;
+    font-style: bold;
 }
 
 .pop-up{
-    position: absolute;
-    top: 30%;
-    left: 35%;
-    right: 35%;
-   
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
     background-color: white;
-    
-    
-    
-    padding: 20px;
-    border-radius: 30px;
-    width: 400px;
+    width: 30%;
+    margin: auto;
+    text-align: center;
+    margin-top: 15%;
+    margin-bottom: 15%;
+    border: none;
+    border-radius: 35px;
+   
+    padding: 10px;
+
 }
 
-.pop-up h1{
-    margin-bottom: 2px;
-    text-align: left;
-    
-}
-
-.pop-up p{
-    font-size: 20px;
-}
-
-
-
-.tick-img-box{
-    position: relative;
-    height: 60px;
-    width:60px;
-    background-color: rgb(77, 194, 77);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: -50px;
-    margin-bottom: 10px;
-    box-shadow: 0 2px 5px;
-}
 .tick-img-box img{
-    position: absolute;
     height: 50px;
     width: 50px;
     border-radius: 50%;
-    object-fit: fill;
-    background-color: rgb(77, 194, 77);
+    border: 5px solid rgb(58, 166, 58);
+    margin-top: -35px;
 }
 
 
 
 .ok-btn{
-    width: 120px;
-    border-radius: 25px;
-    font-size: 18px;
-    background-color: rgb(58, 166, 58); 
+    width: 25%;
+    font-size: 15px;
+    background-color: rgb(58, 166, 58);
+    border-radius: 12px;
     color: white;
-    transform: scale(1.1);
+    padding: 5px;
+   
+    cursor: pointer;
+    transition: 0.5s; 
+    margin: auto; 
+    
     border: none;
-    transition: .5s;
-    box-shadow: 1px 2px 2px black;
-    margin: auto;
+    
 }
 
 .ok-btn:hover{
-    transform: scale(1.3);}
+    background-color: rgb(169, 23, 140);}
 
 
-@media screen and (max-width:640px){
+
+@media screen and (max-width:640px) {
+
     .pop-up{
-        left: 25%;
-        right: 25%;
-        width: 200px;
-    }
-    .tick-img-box{
-        height: 50px;
-        width: 50px;}
-    .tick-img-box img{
-            
-            height: 40px;
-            width: 40px;}
-    .pop-up p{
-                font-size: 16px;
-                text-align: center;
-                color: green;
-                font-weight: 400;
-            }
-    .ok-btn{width: 60px};
+        background-color: white;
+        width: 50%;
+        margin-top: 25%;
+        margin-bottom: 25%;
+   
+}
 }
