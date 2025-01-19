@@ -5,157 +5,191 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sri-Portfolio</title>
-    <link rel="stylesheet" href="css/global_style.css">
-    <link rel="stylesheet" href="css/navbar_style.css">
-    <link rel="stylesheet" href="css/body-style.css">
-    <link rel="stylesheet" href="css/project-style.css">
-    <link rel="stylesheet" href="css/about-style.css">    
-    <link rel="stylesheet" href="css/contact-style.css">
-    <link rel="stylesheet" href="css/responsive.css">
+ 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     
 
-   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="css/navbar_style.css">
+    <link rel="stylesheet" href="css/body-style.css">
+    <link rel="stylesheet" href="css/about-style.css">
+    <link rel="stylesheet" href="css/formsubmit-style.css">
+    <link rel="stylesheet" href="css/project-style.css">
+    <link rel="stylesheet" href="css/responsive.css">
     
 </head>
 
-<body>
+<body class="bg-dark text-white ">
 
-<!-- ************************************  Navbar section  ****************************************************-->
+    <div class="section section-0"><!--navbar-->
+        
+            <nav class="navbar navbar-expand-md background-navbar mb-5 fixed-top">
+                <div class="container-fluid ms-5">
+                <a class="navbar-brand text-secondary" href="#">My<span class="port text-secondary fw-bold">Portfolio.</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto  mb-2 mb-lg-0 px-3">
+                    <li class="nav-item px-2">
+                        <a class="nav-link " aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link  " href="#project">Projects</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link " href="#about">About</a>
+                    </li>
+                    <li class="nav-item ps-2">
+                        <a class="nav-link " href="#contact">Contact</a>
+                    </li>
+                    
+                
+                </div>
+                </div>
+            </nav>
+        
+    </div><!--navbar-->
 
+    <div class="section section-1 vh-80"><!--frontpage-->
+        <section class="container-fluid section one mt-5 p-5 vh-100 d-flex flex-column-reverse flex-md-row align-items-lg-center justify-content-md-between align-items-center" id="home">
 
-<header>
-    <nav class="navbar">
-        <a class="logo" href="#">MyPortfolio.</a>
-        <ul id="sidemenu">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#project">Projects</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>           
-            <img class="menu close" src="images/close-menu.png" onclick="closemenu()"   alt="" >
-        </ul>      
-        <img class="menu open"src="images/open-menu.png" alt="" onclick="openmenu()" >
-    </nav>
-</header>
+            <div class="home-text text-center text-md-start mt-5 mt-md-0 ms-lg-5">
+                <h1 class='text-center text-md-start'>Srinivasan A</h1>
+                <h2 class='text-center text-md-start'>I am a 
+                            <span style="--i:3;">Python Developer</span>
+                            <span style="--i:2;">Data Analyst</span>
+                            <span style="--i:1;">Supply Chain Analyst</span></h2>
+                <br><br><br>            
+                <a href="files/Srini resume.pdf" type="application/pdf">
+                <button class="cv px-4 class='text-center text-md-start'">Download CV</button></a>
+                </a>
+            </div>
 
-   
-<!-- ************************************  Main content section  ****************************************************-->   
+            <div class="me-md-5">
+                <img src="images/srini_photo.png" alt="" 
+                style="transform:rotate(-6deg);border:5px solid rgb(71, 199, 71);" 
+                class="card-img-top rounded-circle object-fit-cover ms-lg-5
+                text-center text-md-right">
+            </div>
+  
+        </section>
+    </div><!--frontpage-->
 
-<section class="section one" id="home">
+    <div class="section section-2 vh-100" id="project"><!--project-->
+                
+        
+            <div class="container-fluid vh-100 align-content-center" id="project">
+        
+                <h1 class="text-center text-white mb-5">Projects</h1>
+
+                <div class="row">
+                    <div class="col-sm-6 col-12">
+                        <div class="container-fluid">
+                            <h4 class="text-center dash">Spend Analysis Dashboard</h4>
+                            <div class="mt-4 text-center">
+                            <a href="spend.html"><img class="img-box" src="images/spend.png" alt="" style="width:80%;"></a>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="col-sm-6 col-12 my-5 mt-sm-0">
+                        <div class="container-fluid">
+                            <h4 class="text-center dash">Inventory Dashboard</h4>
+                            <div class="mt-4 text-center"> 
+                            <a href="inventory.html"><img class="img-box"  src="images/inv.png" alt="" style="width:80%;"></a>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    
+                </div>
+                
+            </div>
             
-    <div class="home-text">
-        <h1>Srinivasan A</h1>
-        <h2>I am a  <span style="--i:4;">Python Developer</span>
-                    <span style="--i:3;">Django Developer</span>
-                     <span style="--i:2;">Data Analyst</span>
-                    <span style="--i:1;">Supply Chain Analyst</span></h2>
-        <br><br><br>            
-        <a href="files/Srini resume.pdf" type="application/pdf">
-        <button class="cv">Download CV</button></a>
-        </a>
-    </div>
+        
+    
+    </div><!--project-->
 
-    <div class="home-img">
-        <div class="img-container">
-            <div class="img-item">
-                <img src="images/srini_photo.png" alt="">
+    <div class="section section-3 vh-100  d-flex align-items-center my-5 my-lg-0" id="about" ><!--About me-->
+        <div class="container "  >
+            <div class="about-area mt-sm-5">
+            
+                <div class="text-area pt-5 pt-md-0">
+                    <h1>About me</h1>
+                    <p>Hi, I'm Srinivasan A, Data Analyst with over 4 years of experience in Procurement ,logistics and operations for diverse industries. My expertise lies in leveraging data analytics and strategic planning to enhance supply chain efficiency, reduce costs, and improve overall performance.</p>
+                    <br>
+                    <p>My Expertise includes skills in programming and data analysis such as :</p>
+                    
+                    <p><span class="text-warning fw-bold">Supply Chain Management : </span>&nbsp; &nbsp;  SAP MM,SAP ARIBA</p>
+                    <p><span class="text-warning fw-bold">Programming Language&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : </span>&nbsp; &nbsp;  Python</p>
+                    <p><span class="text-warning fw-bold">Database &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : </span> &nbsp; &nbsp; MySQL and MS-SQL</p>
+                    <p><span class="text-warning fw-bold">Data Visualization Tools &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: </span>&nbsp; &nbsp;  PowerBI </p>
+                </div>
+
+                <!-- <div class="container">
+                    <div class="row">
+                        <div class="col-10 mx-auto">
+                            <div class="skill-area">
+                                <h2 id="p-skill" class="ms-lg-5">Skills</h2>
+                                <div class="list-area">
+                                    <button class="skill-btn">Python</button>
+                                    <button class="skill-btn">Django</button>
+                                    <button class="skill-btn">SQL</button>
+                                    <button class="skill-btn">PowerBI</button>
+                                    <button class="skill-btn">SAP MM</button>               
+                            
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                
+                
+        
             </div>
         </div>
-        </a>
-    </div>
-</section>
+    </div><!--About me-->
+
+    <div class="section section-4 vh-100 d-flex align-items-center" id="contact"><!--Contact-->
         
-
-<!-- ************************************  Project section  ****************************************************-->
-
-<section class="section two"  id="project">            
-    <h1 class="titlehead" >Projects</h1>
-
-    <div class="p-img-box">
-        
-        <div class="spend">
-            <h2>Spend Analysis Dashboard</h2>
-            <p><a href=""><img src="images/spend.png" alt=""></a></p> 
-        </div>
-
-        <div class="inventory">
-            <h2>Inventory Dashboard</h2>
-            <p><a href=""><img src="images/inv.png" alt=""></a></p> 
-        </div>                    
-        
-    </div>
-
-</section>     
-
-<!-- ************************************  About section  ****************************************************-->
-
-<section  class="three"  id="about">
-    <div class="about-area">
-       
-        <div class="text-area">
-            <h1>About me</h1>
-            <p>Hi, I'm Srinivasan A, Data Analyst with over 4 years of experience in Procurement ,logistics and operations for diverse industries. My expertise lies in leveraging data analytics and strategic planning to enhance supply chain efficiency, reduce costs, and improve overall performance.</p>
-            <br>
-            <p>My Experience and problem-solving skills led me to learn technologies like Application development,Web development,Data Analytics and Database operations.</p>
-        </div>
-
-        <div class="skill-area">
-            <h2 id="p-skill">Skills</h2>
-            <div class="list-area">
-                <button class="skill-btn">Python</button>
-                <button class="skill-btn">Django</button>
-                <button class="skill-btn">SQL</button>
-                <button class="skill-btn">PowerBI</button>
-                <button class="skill-btn">SAP MM</button>               
-           
-        </div>
-        </div>
-    </div>
-
-</section>      
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-12 ">
+                    <h1 class="mb-4 text-center text-md-start">Contact me</h1>
+                    
+                    <p class="text-center text-md-start"><span><i class="bi bi-envelope-fill text-warning"></i></span>&nbsp;&nbsp;smartvasanin@gmail.com</p>
+                    <p class="text-center text-md-start"><span><i class="bi bi-telephone-fill text-warning"></i></span>&nbsp;&nbsp;+91-9092265382&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
 
 
+                </div>
 
-<!-- ************************************  contact section  ****************************************************-->
+                <div class="col-md-6 col-12">
+                    <form action="form-submit.html" class="form-group ms-lg-5">
+                        <input type="text" placeholder="Name" class="form-control my-3 w-80" required >
+                        <input type="email" placeholder="Email" class="form-control my-3 w-80" required >
+                    
+                        <textarea placeholder="Message" rows="6" class="form-control my-3 w-80" required ></textarea>
+                        <input class="btn btn-success submit" type="submit" value="Send Message">
+                    </form>
 
-<section class="section four"  id="contact">
-            
-    <div class="container">
-        
-        <div class="content">
-            <h1>Contact me</h1>
-            <div class="icons" id="email-icon">
-                <img  src="images/mail.png" alt="">
-                <p>smartvasanin@gmail.com</p><br><br>
+
+                </div>
             </div>
-            <div class="icons">
-                <img  src="images/phone.png" alt="">
-                <p>+91-9092265382</p><br><br>
-            </div>                       
-            
-
         </div>
+    </div><!--contact-->
 
-        <div class="contact">
-            
-            <form action="form-submit.html">
-                <input type="text" placeholder="Name" required>
-                <input type="email" placeholder="Email" required>
-               
-                <textarea placeholder="Message" rows="6" required></textarea>
-                <input class="btn" type="submit" value="Send Message">
-            </form>
-        </div>
-    </div>
-
-</section>
+    <footer>
+        <p class="text-center text-white">&copy; 2025 copyright.</p>
+    </footer>   
 
 
-<footer>
-    <p>&copy; 2024 copyright.</p>
-</footer>   
-        
 
-   <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
       
 </body>
 </html>
