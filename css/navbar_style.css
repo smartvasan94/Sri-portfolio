@@ -1,0 +1,36 @@
+
+
+.navbar-brand{
+    /* font-size: 30px; */
+    font-weight: 800;
+    background: linear-gradient(45deg, #523beb, #c9329e); 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    
+}
+
+.nav-link{
+    transition: .5s;
+    color:white;
+    /* font-size: 20px; */
+}
+.nav-link:hover {
+    color:white;
+    text-shadow: 0 3px 0 black;    
+    /* font-size: 25px; */
+    font-weight: 500; 
+    padding: 5%; 
+    transform: scale(1.2);
+ 
+}
+
+ .nav-link:active {
+    color: brown;
+    cursor: pointer;
+
+}
+
+.background-navbar{
+    /* background:linear-gradient(45deg,brown,pink,rgb(136, 9, 108)) */
+    background-color: #95C21B
+}
