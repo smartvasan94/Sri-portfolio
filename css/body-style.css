@@ -12,7 +12,7 @@ body{
     display: inline-block;
 }
 @keyframes display-text{
-    33%,100%{
+    50%,100%{
         display: none;
     }
 }
