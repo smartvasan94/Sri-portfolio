@@ -7,8 +7,8 @@ body{
 .home-text h2 span{
     color: #a3ef5c;
     
-    animation:display-text 4s linear infinite;
-    animation-delay: calc(-2s* var(--i));
+    animation:display-text 2s linear infinite;
+    animation-delay: calc(-1s* var(--i));
     display: inline-block;
 }
 @keyframes display-text{
